@@ -1,5 +1,5 @@
 class MoviesController < ApplicationController
   def index
-    @hello_world_props = { name: "Stranger" }
+    @movies = { listOfMovies: MovieService.all }
   end
 end

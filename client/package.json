@@ -8,7 +8,9 @@
   "scripts": {
     "build:test": "webpack --config webpack.config.js",
     "build:production": "NODE_ENV=production webpack --config webpack.config.js",
-    "build:development": "webpack -w --config webpack.config.js"
+    "build:development": "webpack -w --config webpack.config.js --watch",
+    "eslint": "eslint --ext .js,.jsx .",
+    "jscs": "jscs --verbose . ../app/assets/javascripts ../vendor/assets/javascripts"
   },
   "cacheDirectories": [
     "node_modules",
@@ -35,6 +37,13 @@
     "webpack": "^1.12.14"
   },
   "devDependencies": {
+    "eslint": "^3.4.0",
+    "eslint-plugin-import": "^1.14.0",
+    "eslint-plugin-jsx-a11y": "^2.2.1",
+    "eslint-plugin-react": "^6.2.0",
+    "i": "^0.3.5",
+    "jscs": "^3.0.7",
+    "npm": "^3.10.6",
     "redux-devtools": "^3.3.1"
   }
 }

@@ -1,3 +1,5 @@
 class MovieService
-  API_URL = 'http://api.androidhive.info/json/movies.json'
+  def self.all
+    JSON.parse RestClient.get 'http://api.androidhive.info/json/movies.json'
+  end
 end
