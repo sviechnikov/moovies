@@ -1,16 +1,11 @@
 class MovieService
-  API_HOST = 'http://private-20bfe-themoviedb.apiary-mock.com/3/movie/'.freeze
+  BASE_URL = 'http://private-20bfe-themoviedb.apiary-mock.com/3/movie/'.freeze
 
-  def self.popular
-  end
+  def self.request(method, params = {})
+    uri = URI(BASE_URL + method)
+    uri.query = URI.encode_www_form(params)
+    response = Net::HTTP.get_response(uri)
 
-  private
-
-  def req
-    uest(path)
-    uri = URI::HTTP.build(host: API_HOST, path: path, api_key: Rails.application.secrets.apiary_api_key)
-
-    response = RestClient.get(uri)
-    JSON.parse response
+    { success: response.is_a?(Net::HTTPSuccess), data: JSON.parse(response.body) }
   end
 end

@@ -5,8 +5,6 @@ gem 'sqlite3'
 
 gem 'puma', '~> 3.0'
 
-gem 'rest-client'
-
 gem 'react_on_rails', '~> 6'
 gem 'mini_racer', platforms: :ruby
 gem 'sass-rails', '~> 5.0'

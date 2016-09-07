@@ -47,8 +47,6 @@ GEM
     concurrent-ruby (1.0.2)
     connection_pool (2.2.0)
     debug_inspector (0.0.2)
-    domain_name (0.5.20160826)
-      unf (>= 0.0.5, < 1.0.0)
     erubis (2.7.0)
     execjs (2.7.0)
     ffi (1.9.14)
@@ -56,8 +54,6 @@ GEM
       thor (~> 0.19.1)
     globalid (0.3.7)
       activesupport (>= 4.1.0)
-    http-cookie (1.0.2)
-      domain_name (~> 0.5)
     i18n (0.7.0)
     libv8 (5.0.71.48.3)
     listen (3.0.8)
@@ -75,7 +71,6 @@ GEM
     mini_racer (0.1.4)
       libv8 (~> 5.0, < 5.1.11)
     minitest (5.9.0)
-    netrc (0.11.0)
     nio4r (1.2.1)
     nokogiri (1.6.8)
       mini_portile2 (~> 2.1.0)
@@ -126,10 +121,6 @@ GEM
       foreman
       rails (>= 3.2)
       rainbow (~> 2.1)
-    rest-client (2.0.0)
-      http-cookie (>= 1.0.2, < 2.0)
-      mime-types (>= 1.16, < 4.0)
-      netrc (~> 0.8)
     rubocop (0.38.0)
       parser (>= 2.3.0.6, < 3.0)
       powerpack (~> 0.1)
@@ -173,9 +164,6 @@ GEM
       thread_safe (~> 0.1)
     uglifier (3.0.2)
       execjs (>= 0.3.0, < 3)
-    unf (0.1.4)
-      unf_ext
-    unf_ext (0.0.7.2)
     unicode-display_width (1.1.0)
     web-console (3.3.1)
       actionview (>= 5.0)
@@ -197,7 +185,6 @@ DEPENDENCIES
   rails (~> 5.0.0, >= 5.0.0.1)
   rails-assets-bootstrap (= 3.3.7)!
   react_on_rails (~> 6)
-  rest-client
   rubocop (~> 0.38.0)
   ruby-lint
   sass-rails (~> 5.0)
